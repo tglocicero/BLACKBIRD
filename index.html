@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<title>LMC 3255 Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    }
+
+    .bgimg-1 {
+        background-image: url('images/snowyMountains.jpg');
+    }
+    .bgimg-2 {
+        background-image: url('images/blackbirdEye.jpg');
+    }
+    .bgimg-3 {
+        background-image: url('images/birdsInTree.jpg');
+    }
+    .bgimg-4 {
+        background-image: url('images/birdsOfFire.jpg');
+    }
+    .bgimg-5 {
+        background-image: url('images/birdsOfFire.jpg');
+    }
+
+
+    .bgvid { 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+</style>
+
+<body>
+<audio autoplay loop>
+  <source src="images/OpenCountryJoy.mp3" type="audio/mp3">
+</audio>
+<!-- First Parallax Image with Title Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">BLACKBIRD</span>
+    </div>
+</div>
+
+<!-- Container-->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">Tucker LoCicero</h3>
+    <p class="w3-center">
+        A remediation of<br>
+        <em>Thirteen Ways of Looking at a Blackbird</em><br>
+        by Wallace Stevens<br>
+    </p>
+</div>
+
+<!--ONE-->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="stanza1bg">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">ONE</span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="stanza1">
+    <h3 class="w3-center">Among twenty snowy mountains,<br>
+        The only moving thing<br>
+        Was the eye of the blackbird.<br>
+    </h3>
+</div>
+
+<!--TWO-->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="stanza2bg">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">TWO</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="stanza2">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div>
+
+<!--THREE-->
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="stanza2bg">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">THREE</span>
+   </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="stanza3">
+    <h3 class="w3-center">The blackbird whirled in the atumn winds.<br>
+        It was a small part of the pantomime.<br>
+    </h3>
+</div>
+
+<!--FOUR-->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">FOUR</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">A man and a woman<br>
+        Are one.<br>
+        A man and a woman and a blackbird<br>
+        Are one.<br>
+    </h3>
+</div>
+
+<!--FIVE-->
+<<div class="bgvid w3-display-container w3-opacity-min" id="stanza2bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="bgvid">
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">FIVE</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I do not know which to prefer,<br>
+        The beauty of inflections<br>
+        Or the beauty of innuendoes,
+        The blackbird whistling
+        Or just after.<br>
+    </h3>
+</div>
+
+<!--SIX-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">SIX</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--SEVEN-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">SEVEN</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--EIGHT-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">EIGHT</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!-- NINE -->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">NINE</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--TEN-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">TEN</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--ELEVEN-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">ELEVEN</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--TWELVE-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">TWELVE</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div> -->
+
+<!--THIRTEEN-->
+<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+       <span class="w3-xxlarge w3-text-light-grey w3-wide">THIRTEEN</span>
+   </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">I was of three minds,<br>
+        Like a tree<br>
+        In which there are three blackbirds.<br>
+    </h3>
+</div>
+ -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
