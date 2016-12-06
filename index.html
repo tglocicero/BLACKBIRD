@@ -6,6 +6,55 @@
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="morefonts.css">
 
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        setTimeout(function() {$("#about").scrollBtm();}, 5310);
+        setTimeout(function() {$("#stanza1bg").scrollView();},10460);
+        setTimeout(function() {$("#stanza1").scrollBtm();}, 15190);
+        setTimeout(function() {$("#stanza2bg").scrollView();},19050);
+        setTimeout(function() {$("#stanza2").scrollBtm();}, 23270);
+        setTimeout(function() {$("#stanza3bg").scrollView();},28700);
+        setTimeout(function() {$("#stanza3").scrollBtm();}, 33220);
+        setTimeout(function() {$("#stanza4bg").scrollView();},38110);
+        setTimeout(function() {$("#stanza4").scrollBtm();}, 42170);
+        setTimeout(function() {$("#stanza5bg").scrollView();},48100);
+        setTimeout(function() {$("#stanza5").scrollBtm();}, 57840);
+        setTimeout(function() {$("#justafterbg").scrollView();},64500);
+        setTimeout(function() {$("#secondmovement").scrollViewFast()}, 71600);
+        setTimeout(function() {$("#stanza6").scrollBtm();}, 74220);
+        setTimeout(function() {$("#stanza7bg").scrollView();},85630);
+        setTimeout(function() {$("#stanza7").scrollBtm();}, 89480);
+    });
+
+    $.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+            }, 1000);
+        });
+    }
+
+    $.fn.scrollViewFast = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+            }, 0);
+        });
+    }
+
+    $.fn.scrollBtm = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top - ($(window).height() - $(this).outerHeight())
+            }, 1000);
+        });
+    }
+
+</script>
+</head>
+
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
     body, html {
@@ -55,8 +104,11 @@
     }
 
     .animatedBG {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
         animation-name: lightning;
-        animation-duration: 2s;
+        animation-duration: .4s;
         animation-iteration-count: infinite;
     }
 
@@ -115,7 +167,7 @@
 </div>
 
 <!--THREE-->
-<div class="bgimg-4 w3-display-container w3-opacity-min" id="stanza2bg">
+<div class="bgimg-4 w3-display-container w3-opacity-min" id="stanza3bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">THREE</span>
    </div>
@@ -129,7 +181,7 @@
 </div>
 
 <!--FOUR-->
-<div class="bgimg-5 w3-display-container w3-opacity-min">
+<div class="bgimg-5 w3-display-container w3-opacity-min" id="stanza4bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">FOUR</span>
    </div>
@@ -162,14 +214,18 @@
     </h3>
 </div>
 
-<div class="bgimg-6 w3-display-container w3-opacity-min">
+<div class="bgimg-6 w3-display-container w3-opacity-min" id="justafterbg">
     <div class="w3-display-middle">
-       <span class="w3-xxlarge w3-wide">[just after]</span>
+       <span class="w3-xlarge w3-wide">[just after]</span>
    </div>
 </div>
 
 <!--SIX-->
-
+<div class="animatedBG w3-display-container w3-opacity-min" id="secondmovement">
+    <div class="w3-display-middle">
+       <span class="w3-wide" style="color: black; font-size: 5000%">SIX</span>
+   </div>
+</div>
 
 <div class="w3-content w3-container w3-padding-64" id="stanza6">
     <h3 class="w3-center">Icicles filled the long window<br>
@@ -183,13 +239,13 @@
 </div>
 
 <!--SEVEN-->
-<div class="bgimg-7 w3-display-container w3-opacity-min">
+<div class="bgimg-7 w3-display-container w3-opacity-min" id="stanza7bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">SEVEN</span>
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
+<div class="w3-content w3-container w3-padding-64" id="stanza7">
     <h3 class="w3-center">O thin men of Haddam,<br>
         Why do you imagine golden birds?<br>
         Do you not see how the blackbird<br>
@@ -199,7 +255,7 @@
 </div>
 
 <!--EIGHT-->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">EIGHT</span>
    </div>
@@ -210,10 +266,10 @@
         Like a tree<br>
         In which there are three blackbirds.<br>
     </h3>
-</div> -->
+</div>
 
 <!-- NINE -->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">NINE</span>
    </div>
@@ -224,7 +280,7 @@
         Like a tree<br>
         In which there are three blackbirds.<br>
     </h3>
-</div> -->
+</div>
 
 <!--TEN-->
 <div class="bgvid w3-display-container w3-opacity-min" id="stanza10bg">
@@ -245,7 +301,7 @@
 </div>
 
 <!--ELEVEN-->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">ELEVEN</span>
    </div>
@@ -256,10 +312,10 @@
         Like a tree<br>
         In which there are three blackbirds.<br>
     </h3>
-</div> -->
+</div>
 
 <!--TWELVE-->
-<!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-3 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">TWELVE</span>
    </div>
@@ -270,7 +326,7 @@
         Like a tree<br>
         In which there are three blackbirds.<br>
     </h3>
-</div> -->
+</div>
 
 <!--THIRTEEN-->
 <div class="w3-display-container w3-opacity-min">
@@ -291,25 +347,15 @@
 
 <div class="w3-content w3-container w3-padding-64">
     <h3 class="w3-center">It was evening all afternoon.<br>
-            It was snowing<br>
-            And it was going to snow.<br>
-            The blackbird sat<br>
-            In the cedar-limbs.
-        </h3> 
+        It was snowing<br>
+        And it was going to snow.<br>
+        The blackbird sat<br>
+        In the cedar-limbs.
+    </h3> 
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
