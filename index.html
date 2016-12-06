@@ -14,18 +14,30 @@
         setTimeout(function() {$("#stanza1bg").scrollView();},10460);
         setTimeout(function() {$("#stanza1").scrollBtm();}, 15190);
         setTimeout(function() {$("#stanza2bg").scrollView();},19050);
-        setTimeout(function() {$("#stanza2").scrollBtm();}, 23270);
+        setTimeout(function() {$("#stanza2").scrollBtm();}, 22270);
         setTimeout(function() {$("#stanza3bg").scrollView();},28700);
         setTimeout(function() {$("#stanza3").scrollBtm();}, 33220);
         setTimeout(function() {$("#stanza4bg").scrollView();},38110);
         setTimeout(function() {$("#stanza4").scrollBtm();}, 42170);
         setTimeout(function() {$("#stanza5bg").scrollView();},48100);
-        setTimeout(function() {$("#stanza5").scrollBtm();}, 57840);
-        setTimeout(function() {$("#justafterbg").scrollView();},64500);
-        setTimeout(function() {$("#secondmovement").scrollViewFast()}, 71600);
+        setTimeout(function() {$("#stanza5").scrollBtm();}, 58840);
+        setTimeout(function() {$("#justafterbg").scrollView();},65500);
+        setTimeout(function() {$("#secondmovement").scrollViewFast()}, 71700);
         setTimeout(function() {$("#stanza6").scrollBtm();}, 74220);
         setTimeout(function() {$("#stanza7bg").scrollView();},85630);
         setTimeout(function() {$("#stanza7").scrollBtm();}, 89480);
+        setTimeout(function() {$("#stanza8bg").scrollView();},95630);
+        setTimeout(function() {$("#stanza8").scrollBtm();}, 100480);
+        setTimeout(function() {$("#stanza9bg").scrollView();},106630);
+        setTimeout(function() {$("#stanza9").scrollBtm();}, 109480);
+        setTimeout(function() {$("#stanza10bg").scrollView();},114630);
+        setTimeout(function() {$("#stanza10").scrollBtm();}, 122980);
+        setTimeout(function() {$("#stanza11bg").scrollView();},128130);
+        setTimeout(function() {$("#stanza11").scrollBtm();}, 133980);
+        setTimeout(function() {$("#stanza12bg").scrollView();},139130);
+        setTimeout(function() {$("#stanza12").scrollBtm();}, 145980);
+        setTimeout(function() {$("#stanza13").scrollBtmSlow();}, 150000);
+
     });
 
     $.fn.scrollView = function () {
@@ -52,6 +64,14 @@
         });
     }
 
+    $.fn.scrollBtmSlow = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top - ($(window).height() - $(this).outerHeight())
+            }, 10000);
+        });
+    }
+
 </script>
 </head>
 
@@ -64,7 +84,7 @@
     }
 
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -92,6 +112,18 @@
     }
     .bgimg-7 {
         background-image: url('images/menOfHaddam.jpg');
+    }
+    .bgimg-8 {
+        background-image: url('images/equipage.jpg');
+    }
+    .bgimg-9 {
+        background-image: url('images/rhythms.jpg');
+    }
+    .bgimg-10 {
+        background-image: url('images/circle.jpg');
+    }
+    .bgimg-11 {
+        background-image: url('images/river.jpg');
     }
 
     .bgvid { 
@@ -255,30 +287,32 @@
 </div>
 
 <!--EIGHT-->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-9 w3-display-container w3-opacity-min" id="stanza8bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">EIGHT</span>
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">I was of three minds,<br>
-        Like a tree<br>
-        In which there are three blackbirds.<br>
+<div class="w3-content w3-container w3-padding-64" id="stanza8">
+    <h3 class="w3-center">I know noble accents<br>
+        And lucid, inescapable rhythms;<br>
+        But I know, too,<br>
+        That the blackbird is involved<br>
+        In what I know.<br<
     </h3>
 </div>
 
 <!-- NINE -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-10 w3-display-container w3-opacity-min" id="stanza9bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">NINE</span>
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">I was of three minds,<br>
-        Like a tree<br>
-        In which there are three blackbirds.<br>
+<div class="w3-content w3-container w3-padding-64" id="stanza9">
+    <h3 class="w3-center">When the blackbird flew out of sight,<br>
+        It marked the edge<br>
+        Of one of many circles.<br>
     </h3>
 </div>
 
@@ -301,30 +335,32 @@
 </div>
 
 <!--ELEVEN-->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-8 w3-display-container w3-opacity-min" id="stanza11bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">ELEVEN</span>
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">I was of three minds,<br>
-        Like a tree<br>
-        In which there are three blackbirds.<br>
+<div class="w3-content w3-container w3-padding-64" id="stanza11">
+    <h3 class="w3-center">He rode over Connecticut<br>
+        In a glass coach.<br>
+        Once, a fear pierced him,<br>
+        In that he mistook<br>
+        The shadow of his equipage<br>
+        For blackbirds.<br>
     </h3>
 </div>
 
 <!--TWELVE-->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-11 w3-display-container w3-opacity-min" id="stanza12bg">
     <div class="w3-display-middle">
        <span class="w3-xxlarge w3-text-light-grey w3-wide">TWELVE</span>
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">I was of three minds,<br>
-        Like a tree<br>
-        In which there are three blackbirds.<br>
+<div class="w3-content w3-container w3-padding-64" id="stanza12">
+    <h3 class="w3-center">The river is moving.<br>
+        The blackbird must be flying.<br>
     </h3>
 </div>
 
@@ -345,7 +381,7 @@
    </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-container w3-padding-64" id="stanza13">
     <h3 class="w3-center">It was evening all afternoon.<br>
         It was snowing<br>
         And it was going to snow.<br>
