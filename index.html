@@ -11,33 +11,34 @@
     $(window).on("load", function () {
         $("#greeting").fadeOut("slow");
         $("#song").get(0).play()
-        setTimeout(function() {$("#about").scrollBtm();}, 5310);
-        setTimeout(function() {$("#stanza1bg").scrollView();},10460);
-        setTimeout(function() {$("#stanza1").scrollBtm();}, 15190);
-        setTimeout(function() {$("#stanza2bg").scrollView();},19050);
-        setTimeout(function() {$("#stanza2").scrollBtm();}, 22270);
-        setTimeout(function() {$("#stanza3bg").scrollView();},28700);
-        setTimeout(function() {$("#stanza3").scrollBtm();}, 33220);
-        setTimeout(function() {$("#stanza4bg").scrollView();},38110);
-        setTimeout(function() {$("#stanza4").scrollBtm();}, 42170);
-        setTimeout(function() {$("#stanza5bg").scrollView();},48100);
-        setTimeout(function() {$("#stanza5").scrollBtm();}, 58840);
-        setTimeout(function() {$("#justafterbg").scrollView();},65500);
-        setTimeout(function() {$("#secondmovement").scrollViewFast()}, 71900);
-        setTimeout(function() {$("#stanza6").scrollBtm();}, 74220);
-        setTimeout(function() {$("#stanza7bg").scrollView();},85630);
-        setTimeout(function() {$("#stanza7").scrollBtm();}, 89480);
-        setTimeout(function() {$("#stanza8bg").scrollView();},96630);
-        setTimeout(function() {$("#stanza8").scrollBtm();}, 102480);
-        setTimeout(function() {$("#stanza9bg").scrollView();},107630);
-        setTimeout(function() {$("#stanza9").scrollBtm();}, 110480);
-        setTimeout(function() {$("#stanza10bg").scrollView();},115630);
-        setTimeout(function() {$("#stanza10").scrollBtm();}, 123980);
-        setTimeout(function() {$("#stanza11bg").scrollView();},129130);
-        setTimeout(function() {$("#stanza11").scrollBtm();}, 134980);
-        setTimeout(function() {$("#stanza12bg").scrollView();},140130);
-        setTimeout(function() {$("#stanza12").scrollBtm();}, 146980);
-        setTimeout(function() {$("#stanza13").scrollBtmSlow();}, 150300);
+        // setTimeout(function() {$("#about").scrollBtm();}, 5310);
+        // setTimeout(function() {$("#stanza1bg").scrollView();},10460);
+        // setTimeout(function() {$("#stanza1").scrollBtm();}, 15190);
+        // setTimeout(function() {$("#stanza2bg").scrollView();},19050);
+        // setTimeout(function() {$("#stanza2").scrollBtm();}, 22270);
+        // setTimeout(function() {$("#stanza3bg").scrollView();},28700);
+        // setTimeout(function() {$("#stanza3").scrollBtm();}, 33220);
+        // setTimeout(function() {$("#stanza4bg").scrollView();},38110);
+        // setTimeout(function() {$("#stanza4").scrollBtm();}, 42170);
+        // setTimeout(function() {$("#stanza5bg").scrollView();},48100);
+        // setTimeout(function() {$("#stanza5").scrollBtm();}, 58840);
+        // setTimeout(function() {$("#justafterbg").scrollView();},65500);
+        // setTimeout(function() {$("#secondmovement").scrollViewFast()}, 71900);
+        // setTimeout(function() {$("#stanza6").scrollBtm();}, 74220);
+        // setTimeout(function() {$("#stanza7bg").scrollView();},85630);
+        // setTimeout(function() {$("#stanza7").scrollBtm();}, 89480);
+        // setTimeout(function() {$("#stanza8bg").scrollView();},96630);
+        // setTimeout(function() {$("#stanza8").scrollBtm();}, 102480);
+        // setTimeout(function() {$("#stanza9bg").scrollView();},107630);
+        // setTimeout(function() {$("#stanza9").scrollBtm();}, 110480);
+        // setTimeout(function() {$("#stanza10bg").scrollView();},115630);
+        // setTimeout(function() {$("#stanza10").scrollBtm();}, 123980);
+        // setTimeout(function() {$("#stanza11bg").scrollView();},129130);
+        // setTimeout(function() {$("#stanza11").scrollBtm();}, 134980);
+        // setTimeout(function() {$("#stanza12bg").scrollView();},140130);
+        // setTimeout(function() {$("#stanza12").scrollBtm();}, 146980);
+        // setTimeout(function() {$("#stanza13").scrollBtmSlow();}, 150200);
+        // setTimeout(function() {$("#stanza13").scrollBtmS();}, 152200);
     });
 
     $.fn.scrollView = function () {
@@ -153,6 +154,15 @@
         animation-iteration-count: infinite;
     }
 
+    .about {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 33%;
+        background-image: url('images/about.jpg');
+    }
+
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
 </style>
@@ -176,10 +186,10 @@
     <br>
     <br>
     <br>
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">Your page is loading...</span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">Loading...</span>
     <h3 class="w3-center w3-text-light-grey">
-        Sit back and enjoy the ride.<br>
-        This page will scroll for you.<br>
+        This website scrolls automatically.<br>
+        Just sit back and watch.<br>
     </h3>
 </div>
 
@@ -423,6 +433,72 @@
         The blackbird sat<br>
         In the cedar-limbs.
     </h3> 
+</div>
+
+<div class="w3-row w3-center w3-padding-16" id="freescroll">
+    <span class="w3-large w3-center">[you can scroll freely now]</span><br>
+</div>
+
+<div class="about w3-display-container w3-opacity-min" id="about">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">ABOUT</span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="stanza13">
+    <p style="margin-left: 3cm; margin-right: 3cm">
+    It is by the following principle that I designed BLACKBIRD.
+    </p>
+    <h3 class="w3-xlarge w3-center" style="margin-bottom: 0cm; margin-left: 3cm; margin-right: 3cm;">
+    If it is asked, "What is the content of speech?," it is necessary to say, "It is an actual process of thought, which is in itself nonverbal." An abstract painting represents direct manifestation of creative thought processes as they might appear in computer designs.
+    </h3>
+    <p style="margin-left: 3cm; margin-right: 3cm; margin-top: 0cm; text-align: right; font-size: 85%">
+    Marshall McLuhan, <i>Understaning Media: The Extensions of Man</i>
+    </p>
+    <p style="text-align: center; margin-bottom: .75cm">
+    __________
+    </p>
+    After BLACKBIRD loads, the viewer is presented with a <i>performance</i>, my artistic reading of <i>Thirteen Ways of Looking at a Blackbird</i>, which is, to me, a poem about the process of thought.
+    Like most performances, mine is one of remediation, but instead of translating from written language to spoken and gestural language, mine is a translation to sight and sound in the form of a digital website.
+    <br>
+    <br>
+    Music (along with the ability to automate scrolling) gives me control over the pacing of the reading and helps build and resolve suspense and tension. The user has no control over this. They are at the mercy of BLACKBIRD’s automatic scrolling. This parallels the listener’s lack of control when listening to a poem being performed rather than reading the poem. When a poem is performed, the affect comes from vocal intonation and emphasis. The listener often gets lost and cannot interpret the text as fast as it is being read. Their experience is mostly reliant on the aural quality of the reader. Later the listener can consult the text at their own pace. BLACKBIRD allows this by letting the user scroll freely after the performance is completed, and the screen has scrolled by the last stanza.
+    <br>
+    <br>
+    My performance is bolstered not only by musical and expository (in the form of automatic scrolling) pacing, but also by visual accompaniment. Still and moving images are associated with each stanza of the poem and provide the viewer with my interpretation. They also provide the viewer with raw sensory information that they can respond to and which I have deemed appropriate for the context of poem. This is similar to a reader's gestures and facial expressions during a poetry reading.
+    <br>
+    <br>
+    An audio recording of someone reading the poem is intentionally left out with the goal of creating a satisfying performance of the text while ignoring the traditional mediums of poem performance. This draws attention to the power of sight and sound and attempts to emphasize McLuhan’s classic point: “The medium is the message.” A viewer may have a simliar to response to BLACKBIRD if the text was completely removed, becuase the raw sensory information is enough to provide an affective experince.
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <span class="w3-xlarge w3-center">Borrowed Art</span>
+    <br>
+    <br>
+    <b>Images and Video</b><br>
+    <a href="http://offs.donweb-homeip.net/snowy-mountains/">
+        TITLE
+    </a>
+    <br>
+    <a href="http://turningtowardthewindow.tumblr.com/post/50870131790among-twenty-snowy-mountains-the-only-moving">
+        ONE
+    </a>
+    <br>
+    <a href="https://rheumablog.me/2011/03/">
+        TWO
+    </a>
+    <br>
+    <a href="http://thenewcode.com/assets/videos/polina.mp4">
+        FIVE
+    </a>
+    <br>
+    <br>
+
+    <b>Music</b><br>
+    <a href="https://www.youtube.com/watch?v=JtcRdEoGJ_I">
+        'Open Country Joy' by Mahavishnu Orchestra<br>
+    </a>
+    <br>
 </div>
 
 </body>
