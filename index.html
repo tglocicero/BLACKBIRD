@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>LMC 3255 Project</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="morefonts.css">
-
-<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(window).on("load", function () {
+        $("#greeting").fadeOut("slow");
+        $("#song").get(0).play()
         setTimeout(function() {$("#about").scrollBtm();}, 5310);
         setTimeout(function() {$("#stanza1bg").scrollView();},10460);
         setTimeout(function() {$("#stanza1").scrollBtm();}, 15190);
@@ -37,7 +38,6 @@
         setTimeout(function() {$("#stanza12bg").scrollView();},140130);
         setTimeout(function() {$("#stanza12").scrollBtm();}, 146980);
         setTimeout(function() {$("#stanza13").scrollBtmSlow();}, 150300);
-
     });
 
     $.fn.scrollView = function () {
@@ -71,9 +71,7 @@
             }, 10000);
         });
     }
-
 </script>
-</head>
 
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
@@ -83,8 +81,18 @@
         line-height: 1.8;
     }
 
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    }
+
     /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12 {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -147,9 +155,31 @@
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
 </style>
+</head>
 
 <body>
-<audio autoplay>
+<div class="loader w3-padding-64 w3-center" id="greeting">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">Your page is loading...</span>
+    <h3 class="w3-center w3-text-light-grey">
+        Sit back and enjoy the ride.<br>
+        This page will scroll for you.<br>
+    </h3>
+</div>
+
+
+<audio id="song">
   <source src="images/OpenCountryJoy.mp3" type="audio/mp3">
 </audio>
 
